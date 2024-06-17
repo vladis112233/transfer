@@ -86,7 +86,7 @@ body{
 }
 
 .pushmenu{
-    color: yellow;
+    color: #0fff0f;
     font-size: 40px;
 }
 
@@ -297,7 +297,7 @@ body.sidebar-opened {overflow:hidden;}
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2200px;
-    height: 720px;
+    height: 600px;
     /*height: 2000px;*/
     overflow: hidden;
     gap: 3rem;
@@ -354,4 +354,11 @@ body.sidebar-opened {overflow:hidden;}
     color: #212121;
     font-weight: 700;
     font-size: 16px;
+}
+
+.anketa{
+    max-width: 400px;
+    height: 500px;
+    background: #808080bf;
+    border-radius: 10px;
 }
