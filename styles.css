@@ -21,6 +21,15 @@ body{
     transition: background 0.3s ease;
 }
 
+@media (max-width: 800px){
+    .header{
+        background: black;
+    }
+
+
+}
+
+
 .header.scrolled {
     background: #000; /* Изменить на желаемый цвет или фон */
 }
@@ -31,6 +40,12 @@ body{
 
 .logo{
     width: 290px;
+}
+
+@media (max-width: 799px) {
+    .logo{
+        width: 190px;
+    }
 }
 
 .openbtn {
@@ -361,4 +376,82 @@ body.sidebar-opened {overflow:hidden;}
     height: 500px;
     background: #808080bf;
     border-radius: 10px;
+}
+
+.advantages-tranfers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.advantages-tranfers1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.advantages-tranfers2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+@media (max-width: 1046px) {
+    .advantages-tranfers2{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+.img-advantages{
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.text-advantages-tranfers{
+    max-width: 600px;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: EuclidFlexReg, sans-serif;
+}
+
+.name-of-text{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: EuclidFlexReg, sans-serif;
+}
+
+@media (max-width: 416px) {
+    .name{
+        font-size: 20px;
+    }
+
+    .name-of-text{
+        font-size: 16px;
+    }
+
+    .text-advantages-tranfers{
+        max-width: 300px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img-advantages{
+        max-width: 300px;
+    }
+}
+
+.footer{
+
 }
