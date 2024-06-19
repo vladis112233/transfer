@@ -6,7 +6,7 @@ body{
 .header{
     /*width: 100%;*/
     /*background: black;*/
-    background: url('images/firenze.png') top;
+    background: url('images/img.png') top;
     /*background: linear-gradient(to right, rgb(0 0 0 / 92%), rgba(0, 0, 0, 0));*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .venice{
-    background: url('images/firenze.png') center;
+    background: url('images/img.png') center;
     /*background: linear-gradient(to right, rgb(0 0 0 / 92%), rgba(0, 0, 0, 0));*/
     /*filter: opacity(40%);*/
     background-size: cover;
