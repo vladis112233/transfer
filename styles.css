@@ -453,5 +453,36 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .footer{
+    background: black;
+    width: 100%;
+}
 
+.photo-social-media{
+    width: 50px;
+}
+
+.social-media{
+    display: flex;
+}
+
+.phone{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: EuclidFlexReg, sans-serif;
+}
+
+.contacts1{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: EuclidFlexReg, sans-serif;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 1rem;
+    margin-bottom: 10px;
 }
