@@ -316,6 +316,9 @@ body.sidebar-opened {overflow:hidden;}
     /*height: 2000px;*/
     overflow: hidden;
     gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 
@@ -373,9 +376,12 @@ body.sidebar-opened {overflow:hidden;}
 
 .anketa{
     max-width: 400px;
-    height: 500px;
-    background: #808080bf;
+    /* height: 500px; */
+    background: #086faa8f;
     border-radius: 10px;
+    margin-right: 100px;
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .advantages-tranfers{
@@ -485,4 +491,45 @@ body.sidebar-opened {overflow:hidden;}
     padding-left: 10px;
     gap: 1rem;
     margin-bottom: 10px;
+}
+
+.anketa-form{
+    width: 320px;
+    height: 60px;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.anketa-form:focus-within {
+    /*border: 1px solid black; !* Цвет и ширина границы при фокусе *!*/
+}
+
+.text-anketa{
+    font-size: 1rem;
+    font-family: EuclidFlexReg, sans-serif;
+    font-weight: 600;
+}
+
+.text-text{
+    width: 320px;
+    height: 24px;
+    margin-top: 7px;
+    border: 0;
+}
+
+.text-text:focus{
+    outline: 0;
+}
+
+.button-send{
+    width: 330px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    background: white;
+    font-size: 1rem;
+    font-family: EuclidFlexReg, sans-serif;
+    cursor: pointer;
 }
