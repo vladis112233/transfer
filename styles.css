@@ -533,3 +533,21 @@ body.sidebar-opened {overflow:hidden;}
     font-family: EuclidFlexReg, sans-serif;
     cursor: pointer;
 }
+
+@media (max-width: 460px){
+.anketa{
+    margin-right: 0;
+}
+
+    .anketa-form{
+        width: 280px;
+    }
+
+    .text-text{
+        width: 250px;
+    }
+
+    .button-send{
+        width: 290px;
+    }
+}
