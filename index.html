@@ -57,17 +57,26 @@
             <input placeholder="Милан" class="text-text" type="text" id="to" name="to" required><br><br>
         </div>
 
-        <div class="anketa-form">
-            <label class="text-anketa" for="date">Дата:</label><br>
-            <input class="text-text" type="date" id="date" name="date" required><br><br>
-        </div>
+<!--        <div class="anketa-form">-->
+<!--            <label class="text-anketa" for="email">Email:</label>-->
+<!--            <input placeholder="12345@gmail.com" class="text-text" type="email" id="email" name="email" required><br><br>-->
+<!--        </div>-->
 
         <div class="anketa-form">
-            <label class="text-anketa" for="passengers">Количество пассажиров:</label><br>
-            <input class="text-text" type="number" id="passengers" name="passengers" required min="1"><br><br>
+            <label class="text-anketa" for="phone">Телефон:</label>
+            <input placeholder="+ 123 40 456 78 90" class="text-text" type="tel" id="phone" name="phone" pattern="\+?[0-9\s\-\(\)]+" required><br><br>
         </div>
 
 
+            <div class="anketa-form">
+                <label class="text-anketa" for="date">Дата:</label><br>
+                <input class="text-text" type="date" id="date" name="date" required><br><br>
+            </div>
+
+            <div class="anketa-form">
+                <label class="text-anketa" for="passengers">Количество пассажиров:</label><br>
+                <input class="text-text" type="number" id="passengers" name="passengers" required min="1"><br><br>
+            </div>
         <input class="button-send" type="submit" value="Отправить">
     </form>
 </div>
@@ -77,7 +86,7 @@
     <div class="kind-of-transfers1">
         <img class="photo-transfer" src="images/transfer.jpg">
         <p class="text-about-transfers">Трансфер с водителем</p>
-        <a class="link-transfer">Узнать больше</a>
+        <a href="about-transfers.html" class="link-transfer">Узнать больше</a>
     </div>
 
     <div class="kind-of-transfers1">

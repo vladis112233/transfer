@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transfer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo1">
+        <img src="images/logo23.png" class="logo">
+    </div>
+
+    <div id="nav-icon3" class="pushmenu">
+        ☰
+    </div>
+
+    <nav class="sidebar">
+        <div class="text d-flex p-2">
+            <a href="#tel-modal"> Меню Сайта</a>
+            <div id="nav-icon3" class="pushmenu opened">
+                ×
+            </div>
+        </div>
+        <div class="menu-main-menu-container">
+            <ul id="menu-main-menu">
+                <li class="current-menu-item"><a href="#" >Главная</a></li>
+                <li class="menu-parent-item"><a href="#">Услуги<i></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Какая-то услуга 1</a></li>
+                        <li><a href="#">Какая-то услуга 2</a></li>
+                        <li><a href="#">Какая-то услуга 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Клиентам</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hidden-overley"></div>
+</div>
+<div class="venice">
+    <div class="anketa">
+        <form action="send_mail.php" method="post">
+            <div class="anketa-form">
+                <label class="text-anketa" for="name">Имя:</label><br>
+                <input placeholder="Джон" class="text-text" type="text" id="name" name="name" required><br><br>
+            </div>
+
+            <div class="anketa-form">
+                <label class="text-anketa" for="from">Откуда:</label><br>
+                <input placeholder="Болонья" class="text-text" type="text" id="from" name="from" required><br><br>
+            </div>
+
+            <div class="anketa-form">
+                <label class="text-anketa" for="to">Куда:</label><br>
+                <input placeholder="Милан" class="text-text" type="text" id="to" name="to" required><br><br>
+            </div>
+
+            <!--        <div class="anketa-form">-->
+            <!--            <label class="text-anketa" for="email">Email:</label>-->
+            <!--            <input placeholder="12345@gmail.com" class="text-text" type="email" id="email" name="email" required><br><br>-->
+            <!--        </div>-->
+
+            <div class="anketa-form">
+                <label class="text-anketa" for="phone">Телефон:</label>
+                <input placeholder="+ 123 40 456 78 90" class="text-text" type="tel" id="phone" name="phone" pattern="\+?[0-9\s\-\(\)]+" required><br><br>
+            </div>
+
+
+            <div class="anketa-form">
+                <label class="text-anketa" for="date">Дата:</label><br>
+                <input class="text-text" type="date" id="date" name="date" required><br><br>
+            </div>
+
+            <div class="anketa-form">
+                <label class="text-anketa" for="passengers">Количество пассажиров:</label><br>
+                <input class="text-text" type="number" id="passengers" name="passengers" required min="1"><br><br>
+            </div>
+            <input class="button-send" type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
+<div class="transfer-with-driver">
+    <p class="name-driver">Трансфер с водителем</p>
+    <div class="about-driver">
+        <h2>Направления: С Милана:</h2>
+        <table>
+            <tr>
+                <th>Направление</th>
+                <th>Километры</th>
+                <th>Цена (евро)</th>
+            </tr>
+            <tr>
+                <td>Парма</td>
+                <td>126 км</td>
+                <td>315 евро</td>
+            </tr>
+            <tr>
+                <td>Венеция</td>
+                <td>268 км</td>
+                <td>670 евро</td>
+            </tr>
+            <tr>
+                <td>Флоренция</td>
+                <td>318 км</td>
+                <td>795 евро</td>
+            </tr>
+            <tr>
+                <td>Болонья</td>
+                <td>215 км</td>
+                <td>537.5 евро</td>
+            </tr>
+            <tr>
+                <td>Портофино</td>
+                <td>177 км</td>
+                <td>442.5 евро</td>
+            </tr>
+            <tr>
+                <td>озеро Комо</td>
+                <td>52 км</td>
+                <td>150 евро</td>
+            </tr>
+            <tr>
+                <td>Рим</td>
+                <td>578 км</td>
+                <td>1445 евро</td>
+            </tr>
+            <tr>
+                <td>Турин</td>
+                <td>147 км</td>
+                <td>367.5 евро</td>
+            </tr>
+            <tr>
+                <td>Генуя</td>
+                <td>149 км</td>
+                <td>372.5 евро</td>
+            </tr>
+            <tr>
+                <td>Пиза</td>
+                <td>282 км</td>
+                <td>705 евро</td>
+            </tr>
+        </table>
+
+        <h2>Направления: С Болоньи:</h2>
+        <table>
+            <tr>
+                <th>Направление</th>
+                <th>Километры</th>
+                <th>Цена (евро)</th>
+            </tr>
+            <tr>
+                <td>Милан</td>
+                <td>215 км</td>
+                <td>537.5 евро</td>
+            </tr>
+            <tr>
+                <td>Парма</td>
+                <td>103 км</td>
+                <td>257.5 евро</td>
+            </tr>
+            <tr>
+                <td>Венеция</td>
+                <td>151 км</td>
+                <td>377.5 евро</td>
+            </tr>
+            <tr>
+                <td>Флоренция</td>
+                <td>154 км</td>
+                <td>385 евро</td>
+            </tr>
+            <tr>
+                <td>Портофино</td>
+                <td>284 км</td>
+                <td>710 евро</td>
+            </tr>
+            <tr>
+                <td>озеро Комо</td>
+                <td>301 км</td>
+                <td>752.5 евро</td>
+            </tr>
+            <tr>
+                <td>Рим</td>
+                <td>380 км</td>
+                <td>950 евро</td>
+            </tr>
+            <tr>
+                <td>Турин</td>
+                <td>337 км</td>
+                <td>842.5 евро</td>
+            </tr>
+            <tr>
+                <td>Генуя</td>
+                <td>303 км</td>
+                <td>757.5 евро</td>
+            </tr>
+            <tr>
+                <td>Пиза</td>
+                <td>179 км</td>
+                <td>447.5 евро</td>
+            </tr>
+        </table>
+
+        <h2>Направления: С Флоренции:</h2>
+        <table>
+            <tr>
+                <th>Направление</th>
+                <th>Километры</th>
+                <th>Цена (евро)</th>
+            </tr>
+            <tr>
+                <td>Милан</td>
+                <td>306 км</td>
+                <td>765 евро</td>
+            </tr>
+            <tr>
+                <td>Парма</td>
+                <td>186 км</td>
+                <td>465 евро</td>
+            </tr>
+            <tr>
+                <td>Венеция</td>
+                <td>255 км</td>
+                <td>637.5 евро</td>
+            </tr>
+            <tr>
+                <td>Болонья</td>
+                <td>104 км</td>
+                <td>260 евро</td>
+            </tr>
+            <tr>
+                <td>Портофино</td>
+                <td>217 км</td>
+                <td>542.5 евро</td>
+            </tr>
+            <tr>
+                <td>озеро Комо</td>
+                <td>353 км</td>
+                <td>882.5 евро</td>
+            </tr>
+            <tr>
+                <td>Рим</td>
+                <td>275 км</td>
+                <td>687.5 евро</td>
+            </tr>
+            <tr>
+                <td>Турин</td>
+                <td>403 км</td>
+                <td>1007.5 евро</td>
+            </tr>
+            <tr>
+                <td>Генуя</td>
+                <td>236 км</td>
+                <td>590 евро</td>
+            </tr>
+            <tr>
+                <td>Пиза</td>
+                <td>84 км</td>
+                <td>210 евро</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>
