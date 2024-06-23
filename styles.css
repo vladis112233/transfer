@@ -461,6 +461,7 @@ body.sidebar-opened {overflow:hidden;}
 .footer{
     background: black;
     width: 100%;
+    margin-top: 100px;
 }
 
 .photo-social-media{
@@ -558,14 +559,100 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 table {
-    width: 100%;
+    max-width: 400px;
     border-collapse: collapse;
 }
 th, td {
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    font-family: EuclidFlexReg, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
+
 th {
-    background-color: #f2f2f2;
+    background-color: black;
+    color: white;
+}
+
+.about-driver{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.transfer-with-driver{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-about-service-driver1{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: EuclidFlexReg, sans-serif;
+    text-align: center;
+    padding: 0 10px;
+    width: 80%;
+}
+
+.drivers-advantages{
+    max-width: 400px;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.text-about-service-driver2{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: EuclidFlexReg, sans-serif;
+}
+
+.drivers-advantages5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.text-about-service-driver{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weight{
+    font-weight: 800;
+}
+
+.rent-car1{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: EuclidFlexReg, sans-serif;
+    text-align: center;
+    padding: 0 10px;
+    width: 80%;
+}
+
+.rent-car{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mercedes1{
+    max-width: 250px;
+}
+
+.autopark{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
