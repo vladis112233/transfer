@@ -359,6 +359,9 @@ body.sidebar-opened {overflow:hidden;}
     gap: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
+    /*background: #2196F3;*/
+    width: 90%;
+    margin: 20px auto;
 }
 
 .text-about-transfers{
@@ -385,20 +388,32 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .advantages-tranfers{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*gap: 2rem;*/
+    /*!*margin-top: 100px;*!*/
+    /*!*margin-bottom: 100px;*!*/
+    /*background: #2196F3;*/
+    /*width: 90%;*/
+    /*margin: 100px auto;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    /*background: rgb(33, 150, 243);*/
+    width: 90%;
+    margin: 100px auto;
+
 }
 
 .advantages-tranfers1{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 3rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .advantages-tranfers2{
@@ -409,7 +424,7 @@ body.sidebar-opened {overflow:hidden;}
     gap: 3rem;
 }
 
-@media (max-width: 1046px) {
+@media (max-width: 1386px) {
     .advantages-tranfers2{
         flex-direction: column-reverse;
     }
@@ -423,7 +438,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .text-advantages-tranfers{
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .name{
@@ -589,6 +604,9 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    /*background: #2196F3;*/
+    margin: 0 auto;
 }
 
 .text-about-service-driver1{
@@ -597,7 +615,7 @@ th {
     font-family: EuclidFlexReg, sans-serif;
     text-align: center;
     padding: 0 10px;
-    width: 80%;
+    width: 100%;
 }
 
 .drivers-advantages{
