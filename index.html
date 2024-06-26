@@ -27,13 +27,13 @@
                 <li class="current-menu-item"><a href="#" >Главная</a></li>
                 <li class="menu-parent-item"><a href="#">Услуги<i></i></a>
                     <ul class="sub-menu">
-                        <li><a href="#">Какая-то услуга 1</a></li>
-                        <li><a href="#">Какая-то услуга 2</a></li>
-                        <li><a href="#">Какая-то услуга 4</a></li>
+                        <li><a href="#transfer-with-driver">Трансфер с водителем</a></li>
+                        <li><a href="#rent-car">Аренда машин</a></li>
+                        <li><a href="#transfer-to-outlet">Трансфер в аутлет</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Клиентам</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#clients">Клиентам</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </nav>
@@ -49,18 +49,25 @@
 
         <div class="anketa-form">
             <label class="text-anketa" for="from">Откуда:</label><br>
-            <input placeholder="Болонья" class="text-text" type="text" id="from" name="from" required><br><br>
+<!--            <input placeholder="Болонья" class="text-text" type="text" id="from" name="from" required><br><br>-->
+            <select class="text-text" id="from" name="from" required>
+                <option value="Болонья">Болонья</option>
+                <option value="Милан">Милан</option>
+                <option value="Флоренция">Флоренция</option>
+                <option value="Рим">Рим</option>
+            </select><br><br>
         </div>
 
         <div class="anketa-form">
             <label class="text-anketa" for="to">Куда:</label><br>
-            <input placeholder="Милан" class="text-text" type="text" id="to" name="to" required><br><br>
+<!--            <input placeholder="Милан" class="text-text" type="text" id="to" name="to" required><br><br>-->
+            <select class="text-text" id="to" name="from" required>
+                <option value="Болонья">Болонья</option>
+                <option value="Милан">Милан</option>
+                <option value="Флоренция">Флоренция</option>
+                <option value="Рим">Рим</option>
+            </select><br><br>
         </div>
-
-<!--        <div class="anketa-form">-->
-<!--            <label class="text-anketa" for="email">Email:</label>-->
-<!--            <input placeholder="12345@gmail.com" class="text-text" type="email" id="email" name="email" required><br><br>-->
-<!--        </div>-->
 
         <div class="anketa-form">
             <label class="text-anketa" for="phone">Телефон:</label>
@@ -86,23 +93,23 @@
     <div class="kind-of-transfers1">
         <img class="photo-transfer" src="images/transfer.jpg">
         <p class="text-about-transfers">Трансфер с водителем</p>
-        <a class="link-transfer">Узнать больше</a>
+        <a class="link-transfer" href="#transfer-with-driver">Узнать больше</a>
     </div>
 
     <div class="kind-of-transfers1">
         <img class="photo-transfer" src="images/rent-car.jpg">
         <p class="text-about-transfers">Аренда машин</p>
-        <a class="link-transfer">Узнать больше</a>
+        <a class="link-transfer" href="#rent-car">Узнать больше</a>
     </div>
 
     <div class="kind-of-transfers1">
         <img class="photo-transfer" src="images/gucci1.png">
         <p class="text-about-transfers">Трансфер в аутлет</p>
-        <a class="link-transfer">Узнать больше</a>
+        <a class="link-transfer" href="#transfer-to-outlet">Узнать больше</a>
     </div>
 
 </div>
-<div class="advantages-tranfers">
+<div class="advantages-tranfers" id="clients">
 
     <div class="advantages-tranfers1">
         <div class="text-advantages-tranfers">
@@ -173,7 +180,7 @@
     </div>
 </div>
 
-<div class="transfer-with-driver">
+<div class="transfer-with-driver" id="transfer-with-driver">
     <p class="name-driver">Трансфер с водителем</p>
     <div class="about-driver">
 
@@ -334,7 +341,7 @@
 
 </div>
 
-<div class="rent-car">
+<div class="rent-car" id="rent-car">
     <p class="name-driver">Аренда машин</p>
     <div class="rent-car1">
         <p>
@@ -352,7 +359,7 @@
     <img class="mercedes1" src="images/mercedes-v-class5.png">
 </div>
 
-<div class="transfer-with-driver">
+<div class="transfer-with-driver" id="transfer-to-outlet">
     <p class="name-driver">Трансфер в аутлет</p>
     <div class="about-driver">
 
@@ -401,18 +408,18 @@
 
 </div>
 
-<div class="footer">
+<div class="footer" id="contacts">
     <div class="logo1">
         <img src="images/logo23.png" class="logo">
     </div>
     <div class="contacts">
         <p class="contacts1">Контакты</p>
-            <a class="phone">+39 328 493 23 84</a>
-            <a class="phone">1234567@gmail.com</a>
+        <a class="phone" href="tel:+393284932384">+39 328 493 23 84</a>
+        <a class="phone" href="mailto:italcar80@gmail.com">italcar80@gmail.com</a>
     </div>
     <div class="social-media">
         <div class="telegram">
-            <a class="link-social"><img class="photo-social-media" src="images/telegram3.png"></a>
+            <a class="link-social"  href="https://t.me/itatravelcars"><img class="photo-social-media" src="images/telegram3.png"></a>
         </div>
         <div class="telegram">
             <a class="link-social"><img class="photo-social-media" src="images/whatsup.png"></a>
@@ -425,4 +432,14 @@
 
 </body>
 <script src="script.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16624005911">
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16624005911');
+</script>
 </html>

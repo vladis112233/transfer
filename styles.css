@@ -253,7 +253,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 .sidebar ul li a:hover{
     cursor:pointer;
-    background: #F5F5F5;
+    background: gray;
     /*border-left-color: #2196F3;*/
 }
 .sidebar ul ul{
@@ -270,7 +270,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 .sidebar ul ul li a{
     font-size: 17px;
-    color: #333;
+    color: white;
     padding-left: 40px;
 }
 .sidebar ul li.current-menu-item ul li a{
@@ -281,7 +281,7 @@ body.sidebar-opened {overflow:hidden;}
 .sidebar ul li ul li.current-menu-item a {color:#2196F3;}
 .sidebar ul ul li a:hover{
     color: #333!important;
-    background: #F5F5F5!important;
+    background: gray!important;
 }
 .sidebar ul li a i:before {display:none;}
 .sidebar ul li.menu-parent-item a i:before{
@@ -477,6 +477,8 @@ body.sidebar-opened {overflow:hidden;}
     font-size: 20px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .contacts1{
