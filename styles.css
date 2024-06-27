@@ -535,6 +535,8 @@ body.sidebar-opened {overflow:hidden;}
     height: 24px;
     margin-top: 7px;
     border: 0;
+    background: white;
+    font-size: 18px;
 }
 
 .text-text:focus{
@@ -675,4 +677,35 @@ th {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+
+option {
+    background: #f8f9fa;
+    color: #343a40;
+    padding: 10px;
+}
+
+/* Стили для hover эффекта option */
+option:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+select {
+    width: 200px;
+    /*padding: 10px;*/
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-size: 18px;
+    /*font-family: Arial, sans-serif;*/
+    -webkit-appearance: none; /* Убираем стандартные стрелки в Chrome и Safari */
+    -moz-appearance: none; /* Убираем стандартные стрелки в Firefox */
+    appearance: none; /* Убираем стандартные стрелки в других браузерах */
+    /*background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23343a40" d="M2 0L0 2h4zM2 5L0 3h4z"/></svg>');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right 10px center;*/
+    /*background-size: 10px;*/
 }

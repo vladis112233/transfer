@@ -54,7 +54,8 @@
                 <option value="Болонья">Болонья</option>
                 <option value="Милан">Милан</option>
                 <option value="Флоренция">Флоренция</option>
-                <option value="Рим">Рим</option>
+                <option value="Парма">Парма</option>
+                <option value="Бергамо">Бергамо</option>
             </select><br><br>
         </div>
 
@@ -62,10 +63,19 @@
             <label class="text-anketa" for="to">Куда:</label><br>
 <!--            <input placeholder="Милан" class="text-text" type="text" id="to" name="to" required><br><br>-->
             <select class="text-text" id="to" name="from" required>
-                <option value="Болонья">Болонья</option>
                 <option value="Милан">Милан</option>
+                <option value="Болонья">Болонья</option>
                 <option value="Флоренция">Флоренция</option>
                 <option value="Рим">Рим</option>
+                <option value="Парма">Парма</option>
+                <option value="Венеция">Венеция</option>
+                <option value="Портофино">Портофино</option>
+                <option value="озеро Комо">озеро Комо</option>
+                <option value="Турин">Турин</option>
+                <option value="Генуя">Генуя</option>
+                <option value="Пиза">Пиза</option>
+                <option value="Верона">Верона</option>
+                <option value="Бергамо">Бергамо</option>
             </select><br><br>
         </div>
 
@@ -82,7 +92,16 @@
 
             <div class="anketa-form">
                 <label class="text-anketa" for="passengers">Количество пассажиров:</label><br>
-                <input class="text-text" type="number" id="passengers" name="passengers" required min="1"><br><br>
+<!--                <input class="text-text" type="number" id="passengers" name="passengers" required min="1"><br><br>-->
+                <select class="text-text" id="passengers" name="from" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select><br><br>
             </div>
         <input class="button-send" type="submit" value="Отправить">
     </form>
