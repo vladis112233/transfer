@@ -77,3 +77,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var formData = new FormData(this);
+
+    fetch(this.action, {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.getElementById("formStatus").innerHTML = "<p>Заявка успешно отправлена.</p>";
+                // Clear form inputs if needed
+                this.reset();
+            } else {
+                document.getElementById("formStatus").innerHTML = "<p>Произошла ошибка при отправке заявки.</p>";
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById("formStatus").innerHTML = "<p>Произошла ошибка при отправке заявки.</p>";
+        });
+});

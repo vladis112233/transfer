@@ -1,23 +1,43 @@
 <?php
+header('Content-Type: application/json');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $from = htmlspecialchars($_POST['from']);
-    $to = htmlspecialchars($_POST['to']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $date = htmlspecialchars($_POST['date']);
-    $passengers = htmlspecialchars($_POST['passengers']);
+    // Collect and sanitize input data
+    $name = htmlspecialchars(trim($_POST["name"]));
+    $from = htmlspecialchars(trim($_POST["from"]));
+    $to = htmlspecialchars(trim($_POST["to"]));
+    $phone = htmlspecialchars(trim($_POST["phone"]));
+    $date = htmlspecialchars(trim($_POST["date"]));
+    $passengers = htmlspecialchars(trim($_POST["passengers"]));
 
-    $to_email = 'italcar80@gmail.com'; // замените на свой email
-    $subject = 'Новая анкета';
-    $message = "Имя: $name\nОткуда: $from\nКуда: $to\nТелефон: $phone\nДата: $date\nКоличество пассажиров: $passengers";
-    $headers = 'From: noreply@example.com'; // замените на нужный email отправителя
+    // Recipient email
+    $recipient = "italcar80@gmail.com"; // Change this to your email address
 
-    if (mail($to_email, $subject, $message, $headers)) {
-        echo 'Сообщение отправлено успешно.';
+    // Email subject
+    $subject = "Новая заявка от $name";
+
+    // Email message
+    $message = "
+    Имя: $name\n
+    Откуда: $from\n
+    Куда: $to\n
+    Телефон: $phone\n
+    Дата: $date\n
+    Количество пассажиров: $passengers\n
+    ";
+
+    // Email headers
+    $headers = "From: webmaster@example.com"; // Change this to a valid email address
+
+    // Send the email
+    if (mail($recipient, $subject, $message, $headers)) {
+        $response = array("success" => true);
     } else {
-        echo 'Ошибка при отправке сообщения.';
+        $response = array("success" => false);
     }
+
+    echo json_encode($response);
 } else {
-    echo 'Некорректный метод запроса.';
+    echo json_encode(array("success" => false, "error" => "Некорректный запрос."));
 }
 ?>

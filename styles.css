@@ -537,6 +537,7 @@ body.sidebar-opened {overflow:hidden;}
     border: 0;
     background: white;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .text-text:focus{
