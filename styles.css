@@ -1,6 +1,7 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    background: black;
 }
 
 .header{
@@ -260,14 +261,8 @@ body.sidebar-opened {overflow:hidden;}
     overflow: hidden;
     gap: 3rem;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.photo-transfer{
-    max-width: 400px;
-    width: 100%;
-    border-radius: 10px;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .kind-of-transfers{
@@ -280,18 +275,100 @@ body.sidebar-opened {overflow:hidden;}
     margin: 20px auto;
 }
 
-.text-about-transfers{
+/*.kind-of-transfers1{*/
+
+/*}*/
+
+/*.photo-transfer{*/
+/*    max-width: 400px;*/
+/*    width: 100%;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+
+/*.text-about-transfers{*/
+/*    font-size: 25px;*/
+/*    font-weight: 500;*/
+/*    font-family: EuclidFlexReg, sans-serif;*/
+/*    color: white;*/
+/*}*/
+
+/*.link-transfer{*/
+/*    text-decoration: underline;*/
+/*    !*color: #212121;*!*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    color: white;*/
+/*}*/
+
+/*.kind-of-transfers1 {*/
+/*    position: relative;*/
+/*    padding: 10px;*/
+/*    transition: border 0.3s ease-in-out;*/
+/*}*/
+
+/*.animate-border {*/
+/*    border-left: 3px solid white;*/
+/*    border-right: 3px solid white;*/
+/*}*/
+
+/*.photo-transfer {*/
+/*    max-width: 400px;*/
+/*    width: 100%;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.text-about-transfers {*/
+/*    font-size: 25px;*/
+/*    font-weight: 500;*/
+/*    font-family: EuclidFlexReg, sans-serif;*/
+/*    color: white;*/
+/*}*/
+
+/*.link-transfer {*/
+/*    text-decoration: underline;*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.kind-of-transfers1 {
+    position: relative;
+    border: 2px solid transparent; /* начальный стиль без границы */
+    transition: border-color 0.3s ease-in-out;
+    padding: 6px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.photo-transfer {
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-about-transfers {
     font-size: 25px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
+    color: white;
 }
 
-.link-transfer{
+.link-transfer {
     text-decoration: underline;
-    color: #212121;
     font-weight: 700;
     font-size: 16px;
+    color: white;
+    cursor: pointer;
 }
+
+.highlight-border {
+    border-left-color: white;
+    border-right-color: white;
+}
+
+
 
 .anketa{
     max-width: 400px;
@@ -311,12 +388,22 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .advantages-tranfers1{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*gap: 3rem;*/
+    /*width: 100%;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid white;
 }
 
 .advantages-tranfers2{
@@ -348,12 +435,14 @@ body.sidebar-opened {overflow:hidden;}
     font-size: 25px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
+    color: white;
 }
 
 .name-of-text{
     font-size: 18px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
+    color: white;
 }
 
 @media (max-width: 416px) {
@@ -423,6 +512,22 @@ body.sidebar-opened {overflow:hidden;}
     margin-bottom: 10px;
 }
 
+.anketa-form1{
+    height: 125px;
+}
+
+.anketa-form2{
+    width: 383px;
+    border: 0;
+    resize: none;
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.anketa-form2:focus{
+    outline: 0;
+}
+
 .anketa-form:focus-within {
 
 }
@@ -440,8 +545,14 @@ body.sidebar-opened {overflow:hidden;}
     border: 0;
     background: white;
     font-size: 18px;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
+
+.price-display {
+    display: none;
+    color: white;
+}
+
 
 .text-text:focus{
     outline: 0;
@@ -459,9 +570,9 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 @media (max-width: 460px){
-.anketa{
+    .anketa{
     margin-right: 0;
-}
+    }
 
     .anketa-form{
         width: 280px;
@@ -474,11 +585,21 @@ body.sidebar-opened {overflow:hidden;}
     .button-send{
         width: 290px;
     }
+
+    .anketa-form2{
+        width: 274px;
+    }
 }
 
 .name-driver{
+    /*font-family: EuclidFlexReg, sans-serif;*/
+    /*font-size: 28px;*/
+    /*color: white;*/
     font-family: EuclidFlexReg, sans-serif;
-    font-size: 28px;
+    font-size: 38px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
 }
 
 table {
@@ -521,6 +642,7 @@ th {
     text-align: center;
     padding: 0 10px;
     width: 80%;
+    color: white;
 }
 
 .drivers-advantages{
@@ -564,6 +686,7 @@ th {
 
 .weight{
     font-weight: 800;
+    color: white;
 }
 
 .rent-car1{
@@ -573,6 +696,7 @@ th {
     text-align: center;
     padding: 0 10px;
     width: 80%;
+    color: white;
 }
 
 .rent-car{
@@ -591,6 +715,7 @@ th {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 
@@ -622,6 +747,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 
 }
 
@@ -648,19 +774,28 @@ select {
     color: white;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border: 3px solid black;
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    border: 3px solid white;
 }
 
 .container-of-reviews12{
+    /*max-width: 400px;*/
+    /*!*height: 150px;*!*/
+    /*background: black;*/
+    /*color: white;*/
+    /*padding: 10px;*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    /*border: 3px solid black;*/
+
     max-width: 400px;
-    /*height: 150px;*/
-    background: black;
+    /* height: 150px; */
+    /* background: black; */
     color: white;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border: 3px solid black;
+    /*box-shadow: 0 14px 28px rgb(255 255 255), 0 10px 10px rgb(255 255 255 / 22%);*/
+    border: 3px solid white;
 
 }
 
@@ -747,3 +882,22 @@ select {
     justify-content: center;
 }
 
+.from-to{
+    display: flex;
+    background: #00000091;
+    /*height: 150px;*/
+    padding: 30px;
+    gap: 1rem;
+    /* margin-bottom: -300px; */
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+
+.background-white{
+    background: white;
+}
+
+.color-black{
+    color: black;
+}

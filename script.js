@@ -102,3 +102,74 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
             document.getElementById("formStatus").innerHTML = "<p>Произошла ошибка при отправке заявки.</p>";
         });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const prices = {
+        'Болонья': {
+            'Милан': 200, 'Флоренция': 100, 'Парма': 85, 'Бергамо': 220, 'Рим': 380,
+            'Венеция': 150, 'Портофино': 210, 'озеро Комо': 250, 'Турин': 295,
+            'Генуя': 210, 'Пиза': 135, 'Верона': 140
+        },
+        'Милан': {
+            'Болонья': 200, 'Флоренция': 300, 'Парма': 120, 'Бергамо': 60, 'Рим': 570,
+            'Венеция': 275, 'Портофино': 145, 'озеро Комо': 50, 'Турин': 140,
+            'Генуя': 150, 'Пиза': 290, 'Верона': 160
+        },
+        //... Добавьте остальные расстояния
+    };
+
+    const pricePerKm = 2;
+
+    const fromSelect = document.getElementById('from');
+    const toSelect = document.getElementById('to');
+    const priceDisplay = document.getElementById('price-display');
+    const priceText = document.getElementById('price');
+    const calculateButton = document.getElementById('calculate');
+
+    function calculatePrice() {
+        const from = fromSelect.value;
+        const to = toSelect.value;
+
+        if (from && to && from !== to) {
+            const distance = prices[from][to] || prices[to][from];
+            const price = distance * pricePerKm;
+            priceText.textContent = `Цена: ${price} евро`;
+            priceDisplay.style.display = 'block';
+        } else {
+            priceText.textContent = 'Цена: -- евро';
+            priceDisplay.style.display = 'none';
+        }
+    }
+
+    calculateButton.addEventListener('click', calculatePrice);
+});
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const linkTransfer = document.querySelector('.link-transfer');
+//     const kindOfTransfers = document.querySelector('.kind-of-transfers1');
+//
+//     linkTransfer.addEventListener('mouseover', function() {
+//         kindOfTransfers.classList.add('animate-border');
+//     });
+//
+//     linkTransfer.addEventListener('mouseout', function() {
+//         kindOfTransfers.classList.remove('animate-border');
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.link-transfer');
+
+    links.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            const parent = this.closest('.kind-of-transfers1');
+            parent.classList.add('highlight-border');
+        });
+
+        link.addEventListener('mouseleave', function() {
+            const parent = this.closest('.kind-of-transfers1');
+            parent.classList.remove('highlight-border');
+        });
+    });
+});
