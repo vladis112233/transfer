@@ -5,7 +5,7 @@ body{
 }
 
 .header{
-    background: url('images/galereya-viktora-emmanuila.jpeg') top;
+    background: url('images/Gallery-of-Victor-Emmanuel-II.jpeg') top;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2560px;
@@ -253,7 +253,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .venice{
-    background: url('images/galereya-viktora-emmanuila.jpeg') center;
+    background: url('images/Gallery-of-Victor-Emmanuel-II.jpeg') center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2200px;
@@ -551,6 +551,14 @@ body.sidebar-opened {overflow:hidden;}
 .price-display {
     display: none;
     color: white;
+    font-weight: 800;
+    font-size: 20px;
+    background: black;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 
@@ -669,6 +677,7 @@ th {
     font-size: 18px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
+    height: 70px;
 }
 
 .drivers-advantages5{
@@ -944,4 +953,9 @@ option{
     margin-bottom: 10px;
 }
 
-
+.text-about-service-driver4{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 800;
+}
