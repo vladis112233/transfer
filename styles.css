@@ -5,7 +5,7 @@ body{
 }
 
 .header{
-    background: url('images/img.png') top;
+    background: url('images/galereya-viktora-emmanuila.jpeg') top;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2560px;
@@ -253,7 +253,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .venice{
-    background: url('images/img.png') center;
+    background: url('images/galereya-viktora-emmanuila.jpeg') center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2200px;
@@ -272,7 +272,7 @@ body.sidebar-opened {overflow:hidden;}
     flex-wrap: wrap;
     gap: 2rem;
     width: 90%;
-    margin: 20px auto;
+    margin: 60px auto;
 }
 
 /*.kind-of-transfers1{*/
@@ -345,7 +345,7 @@ body.sidebar-opened {overflow:hidden;}
 .photo-transfer {
     max-width: 380px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .text-about-transfers {
@@ -884,13 +884,16 @@ select {
 
 .from-to{
     display: flex;
-    background: #00000091;
-    /*height: 150px;*/
+    background: #000000d1;
+    /* height: 150px; */
     padding: 30px;
     gap: 1rem;
     /* margin-bottom: -300px; */
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 1200px;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 
@@ -901,3 +904,44 @@ select {
 .color-black{
     color: black;
 }
+
+.from-to1{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.from-to3{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.anketa-form-black{
+    background: black;
+    border: 3px solid white;
+}
+
+.text-anketa7{
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+
+option{
+    background: black;
+    color: white;
+}
+
+.button-calculate{
+    width: 100px;
+    height: 76px;
+    border-radius: 10px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
