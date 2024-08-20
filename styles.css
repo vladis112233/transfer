@@ -750,16 +750,13 @@ select {
 
 }
 
-.footer1{
-
-}
 
 .footer2{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 @media (max-width: 729px){
@@ -871,4 +868,20 @@ option{
     justify-content: flex-end;
     font-size: 20px;
     font-weight: 800;
+}
+
+.phone1{
+    font-size: 1rem;
+}
+
+.header-contact{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+@media (max-width: 350px){
+    .photo-social-media2{
+        width: 30px;
+    }
 }

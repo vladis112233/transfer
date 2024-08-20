@@ -1,13 +1,3 @@
-// function openNav() {
-//     document.getElementById("mySidebar").style.width = "200px";
-//     // document.getElementById("main").style.marginLeft = "250px";
-// }
-//
-// function closeNav() {
-//     document.getElementById("mySidebar").style.width = "0";
-//     document.getElementById("main").style.marginLeft= "0";
-// }
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // получаем все элементы с классом pushmenu
@@ -78,32 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    var formData = new FormData(this);
-
-    fetch(this.action, {
-        method: 'POST',
-        body: formData
-    })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                document.getElementById("formStatus").innerHTML = "<p>Заявка успешно отправлена.</p>";
-                // Clear form inputs if needed
-                this.reset();
-            } else {
-                document.getElementById("formStatus").innerHTML = "<p>Произошла ошибка при отправке заявки.</p>";
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            document.getElementById("formStatus").innerHTML = "<p>Произошла ошибка при отправке заявки.</p>";
-        });
-});
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const prices = {
         'Болонья': {
@@ -159,18 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     calculateButton.addEventListener('click', calculatePrice);
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const linkTransfer = document.querySelector('.link-transfer');
-//     const kindOfTransfers = document.querySelector('.kind-of-transfers1');
-//
-//     linkTransfer.addEventListener('mouseover', function() {
-//         kindOfTransfers.classList.add('animate-border');
-//     });
-//
-//     linkTransfer.addEventListener('mouseout', function() {
-//         kindOfTransfers.classList.remove('animate-border');
-//     });
-// });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('.link-transfer');
@@ -187,3 +140,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
