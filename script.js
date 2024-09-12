@@ -68,6 +68,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.querySelector('.link-to-contact').addEventListener('click', function(event) {
+    event.preventDefault(); // Предотвращает стандартное поведение ссылки
+    document.querySelector('#contacts').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const prices = {
         'Болонья': {
@@ -76,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'Генуя': 305, 'Пиза': 178, 'Верона': 151
         },
         'Милан': {
-            'Болонья': 214, 'Флоренция': 302, 'Парма': 126  , 'Бергамо': 60, 'Рим': 570,
+            'Болонья': 220, 'Флоренция': 302, 'Парма': 126  , 'Бергамо': 60, 'Рим': 570,
             'Венеция': 275, 'Портофино': 174, 'озеро Комо': 50, 'Турин': 143,
             'Генуя': 150, 'Пиза': 290, 'Верона': 162
         },
@@ -97,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     };
 
-    const pricePerKm = 2;
+    const pricePerKm = 1.9;
 
     const fromSelect = document.getElementById('from');
     const toSelect = document.getElementById('to');
@@ -111,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (from && to && from !== to) {
             const distance = prices[from][to] || prices[to][from];
-            const price = distance * pricePerKm;
+            const price = Math.round(distance * pricePerKm);
             priceText.textContent = `Цена: ${price} €`;
             priceDisplay.style.display = 'block';
         } else {
@@ -122,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     calculateButton.addEventListener('click', calculatePrice);
 });
+
 
 
 

@@ -4,22 +4,32 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Трансфер Италия, Аутлет, Аренда авто</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16624005911">
-</script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Event snippet for Просмотр страницы conversion page -->
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16679467346/ASVtCPrBxc0ZENLysZE-',
+            'value': 1.0,
+            'currency': 'EUR'
+        });
+    </script>
 
-    gtag('config', 'AW-16624005911');
-</script>
+</head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W25G9RWP');</script>
+<!-- End Google Tag Manager -->
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W25G9RWP"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="header">
     <div class="logo1">
-        <img src="images/logo23.png" class="logo" alt="logo-italtravelcar">
+        <img src="images/NEW-LOGO-ITALTRAVELCAR.png" class="logo" alt="logo-italtravelcar">
     </div>
 
     <div class="header-contact">
@@ -34,11 +44,9 @@
         </div>
     </div>
 
-
-
     <nav class="sidebar">
         <div class="text d-flex p-2">
-            <a href="#tel-modal"> Меню Сайта</a>
+            <a href="#tel-modal">Меню Сайта</a>
             <div id="nav-icon3" class="pushmenu opened">
                 ×
             </div>
@@ -49,7 +57,7 @@
                 <li class="menu-parent-item"><a href="#">Услуги<i></i></a>
                     <ul class="sub-menu">
                         <li><a href="#transfer-with-driver">Трансфер с водителем</a></li>
-                        <li><a href="#rent-car">Аренда машин</a></li>
+                        <li><a href="#rent-car">Автопарк</a></li>
                         <li><a href="#transfer-to-outlet">Трансфер в аутлет</a></li>
                     </ul>
                 </li>
@@ -64,7 +72,6 @@
 
     <div class="from-to">
         <div class="from-to1">
-
             <div class="from-to3">
                 <div class="anketa-form anketa-form-black">
                     <label class="text-anketa text-anketa7" for="from">Откуда:</label><br>
@@ -98,6 +105,9 @@
             <div class="from-to2">
                 <button class="button-calculate anketa-form-black text-anketa7" id="calculate">Узнать цену</button>
             </div>
+            <div class="from-to2">
+                <button class="button-calculate anketa-form-black text-anketa7 link-to-contact2"><a class="link-to-contact" href="#contacts">Связаться с нами</a></button>
+            </div>
 
         </div>
         <div class="price-display" id="price-display" style="display: none;">
@@ -117,8 +127,8 @@
     </div>
 
     <div class="kind-of-transfers1">
-        <img class="photo-transfer" src="images/rent-car.jpg" alt="car-rent">
-        <p class="text-about-transfers">Аренда машин</p>
+        <img class="photo-transfer" src="images/audi.jpg" alt="car-rent">
+        <p class="text-about-transfers">Автопарк</p>
         <a class="link-transfer" href="#rent-car">Узнать больше</a>
     </div>
 
@@ -171,11 +181,13 @@
 
     <div class="advantages-tranfers1">
         <div class="text-advantages-tranfers">
-            <p class="name">Аренда автомобилей</p>
-            <p class="name-of-text">Предлагаем аренду комфортабельных автомобилей c перемещением
-                 по территории Италии.</p>
+            <p class="name">Гибкость и удобство</p>
+            <p class="name-of-text">Мы подстраиваемся под ваши потребности и расписание, обеспечивая гибкость
+                и удобство при планировании поездок. Вы сами выбираете время и маршрут, а мы заботимся обо всем
+                остальном.
+            </p>
         </div>
-        <img class="img-advantages" src="images/rent-car2.jpg" alt="rent-car">
+        <img class="img-advantages" src="images/flexible.jpg" alt="transfer">
     </div>
 
     <div class="advantages-tranfers2">
@@ -188,16 +200,7 @@
         </div>
     </div>
 
-    <div class="advantages-tranfers1">
-        <div class="text-advantages-tranfers">
-            <p class="name">Гибкость и удобство</p>
-            <p class="name-of-text">Мы подстраиваемся под ваши потребности и расписание, обеспечивая гибкость
-                и удобство при планировании поездок. Вы сами выбираете время и маршрут, а мы заботимся обо всем
-                остальном.
-            </p>
-        </div>
-        <img class="img-advantages" src="images/flexible.jpg" alt="transfer">
-    </div>
+
 </div>
 
 
@@ -261,17 +264,40 @@
 </div>
 
 <div class="rent-car" id="rent-car">
-    <p class="name-driver">Аренда машин</p>
-    <div class="rent-car1">
-        <p>
-            Планируете поездку в Италию и нуждаетесь в надежном транспорте? Мы предоставляем автомобили в аренду в
-            таких городах, как <span class="weight">Болонья</span>, <span class="weight">Милан</span> и
-            <span class="weight">Флоренция</span>.
-        </p>
-        <p>
-            В наличии такие авто: <span class="weight">Mercedes V-class</span>.
-        </p>
-    </div>
+        <p class="name-driver">Автопарк</p>
+        <div class="container-of-reviews01">
+
+            <div class="box-of-reviews">
+                <div class="container-of-reviews12">
+                    <img class="img-outlet container-of-reviews15" src="images/mercedes-e.jpg" alt="mercedes-e">
+                    <p class="text-about-service-driver10">Standard</p>
+                    <p class="text-about-service-driver2">
+                        Mercedes E Class, BMW 5 Series или похожие.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-of-reviews">
+                <div class="container-of-reviews12">
+                    <img class="img-outlet container-of-reviews15" src="images/mercedes-s.jpg" alt="mercedes-s">
+                    <p class="text-about-service-driver10">First Class</p>
+                    <p class="text-about-service-driver2">
+                        Mercedes S Class, BMW 7, Audi A8 или похожие.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-of-reviews">
+                <div class="container-of-reviews12">
+                    <img class="img-outlet container-of-reviews15" src="images/mercedes-v.jpg" alt="mercedes-v">
+                    <p class="text-about-service-driver10">First Class Van</p>
+                    <p class="text-about-service-driver2">
+                        Mercedes V Class, Volkswagen Multivan или похожие.
+                    </p>
+                </div>
+            </div>
+        </div>
+
 </div>
 
 <div class="reviews" id="transfer-to-outlet">
@@ -416,7 +442,7 @@
 
 <div class="footer" id="contacts">
     <div class="logo1">
-        <img src="images/logo23.png" class="logo" alt="logo-italtravelcar">
+        <img src="images/NEW-LOGO-ITALTRAVELCAR.png" class="logo" alt="logo-italtravelcar">
     </div>
 
     <div class="footer2">

@@ -1,11 +1,11 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    background: black;
+    background: white;
 }
 
 .header{
-    background: url('images/Gallery-of-Victor-Emmanuel-II.jpeg') top;
+    background: white;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2560px;
@@ -28,9 +28,9 @@ body{
 }
 
 
-.header.scrolled {
-    background: #000;
-}
+/*.header.scrolled {*/
+/*    background: #000;*/
+/*}*/
 
 .logo1{
     padding-left: 10px;
@@ -52,7 +52,7 @@ body{
 }
 
 .pushmenu{
-    color: #0fff0f;
+    color: red;
     font-size: 40px;
 }
 
@@ -256,11 +256,10 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .venice{
-    background: url('images/Gallery-of-Victor-Emmanuel-II.jpeg') center;
+    background: url('images/it-country.jpg') center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2200px;
-    height: 600px;
     overflow: hidden;
     gap: 3rem;
     display: flex;
@@ -297,20 +296,20 @@ body.sidebar-opened {overflow:hidden;}
     font-size: 25px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
-    color: white;
+    color: black;
 }
 
 .link-transfer {
     text-decoration: underline;
     font-weight: 700;
     font-size: 16px;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
 .highlight-border {
-    border-left-color: white;
-    border-right-color: white;
+    border-left-color: black;
+    border-right-color: black;
 }
 
 
@@ -339,10 +338,10 @@ body.sidebar-opened {overflow:hidden;}
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 3px solid black;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-top: 1px solid white;
+    border-top: 3px solid black;
 }
 
 .advantages-tranfers2{
@@ -374,14 +373,14 @@ body.sidebar-opened {overflow:hidden;}
     font-size: 25px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
-    color: white;
+    color: black;
 }
 
 .name-of-text{
     font-size: 18px;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
-    color: white;
+    color: black;
 }
 
 @media (max-width: 416px) {
@@ -405,8 +404,9 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .footer{
-    background: black;
+    background: white;
     width: 100%;
+    border-top: 3px solid black;
 
 }
 
@@ -419,7 +419,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .phone{
-    color: white;
+    color: black;
     font-size: 2rem;
     font-weight: 500;
     font-family: EuclidFlexReg, sans-serif;
@@ -428,7 +428,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .contacts1{
-    color: white;
+    color: black;
     font-size: 2rem;
     font-weight: 800;
     font-family: EuclidFlexReg, sans-serif;
@@ -488,14 +488,14 @@ body.sidebar-opened {overflow:hidden;}
 
 .price-display {
     display: none;
-    color: white;
+    color: black;
     font-weight: 800;
     font-size: 20px;
-    background: black;
+    background: white;
     padding: 5px;
     width: 200px;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
 }
 
@@ -541,7 +541,7 @@ body.sidebar-opened {overflow:hidden;}
 .name-driver{
     font-family: EuclidFlexReg, sans-serif;
     font-size: 38px;
-    color: white;
+    color: black;
     font-weight: 900;
     text-align: center;
 }
@@ -586,7 +586,7 @@ th {
     text-align: center;
     padding: 0 10px;
     width: 80%;
-    color: white;
+    color: black;
 }
 
 .drivers-advantages{
@@ -629,7 +629,7 @@ th {
 
 .weight{
     font-weight: 800;
-    color: white;
+    color: black;
 }
 
 .rent-car1{
@@ -646,6 +646,7 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .mercedes1{
@@ -691,6 +692,7 @@ select {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    border-top: 3px solid black;
 
 }
 
@@ -713,20 +715,23 @@ select {
 .container-of-reviews50 {
     max-width: 400px;
     height: 150px;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     padding: 10px;
     border-radius: 10px;
-    border: 3px solid white;
+    border: 3px solid black;
 }
 
 .container-of-reviews12{
     max-width: 400px;
-    color: white;
+    color: black;
     padding: 10px;
     border-radius: 10px;
-    border: 3px solid white;
+    border: 3px solid black;
+}
 
+.container-of-reviews15{
+    height: 270px;
 }
 
 .coma {
@@ -808,7 +813,7 @@ select {
 
 .from-to{
     display: flex;
-    background: #000000d1;
+    /*background: #000000d1;*/
     padding: 30px;
     gap: 1rem;
     flex-wrap: wrap;
@@ -820,7 +825,7 @@ select {
 
 
 .background-white{
-    background: white;
+    border-top: 3px solid black;
 }
 
 .color-black{
@@ -843,13 +848,13 @@ select {
 }
 
 .anketa-form-black{
-    background: black;
-    border: 3px solid white;
+    background: white;
+    border: 3px solid black;
 }
 
 .text-anketa7{
-    color: white;
-    background: black;
+    color: black;
+    background: white;
     cursor: pointer;
 }
 
@@ -887,4 +892,13 @@ option{
     .photo-social-media2{
         width: 30px;
     }
+}
+
+.link-to-contact{
+    color: black;
+    text-decoration: none;
+}
+
+.link-to-contact2{
+    background: white;
 }
