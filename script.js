@@ -75,64 +75,6 @@ document.querySelector('.link-to-contact').addEventListener('click', function(ev
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const prices = {
-        'Болонья': {
-            'Милан': 220, 'Флоренция': 110, 'Парма': 105, 'Бергамо': 260, 'Рим': 388,
-            'Венеция': 154, 'Портофино': 286, 'озеро Комо': 305, 'Турин': 339,
-            'Генуя': 305, 'Пиза': 178, 'Верона': 151
-        },
-        'Милан': {
-            'Болонья': 220, 'Флоренция': 302, 'Парма': 126  , 'Бергамо': 60, 'Рим': 570,
-            'Венеция': 275, 'Портофино': 174, 'озеро Комо': 50, 'Турин': 143,
-            'Генуя': 150, 'Пиза': 290, 'Верона': 162
-        },
-        'Флоренция': {
-            'Болонья': 110, 'Милан': 308, 'Парма': 190, 'Бергамо': 342, 'Рим': 275,
-            'Венеция': 260, 'Портофино': 216, 'озеро Комо': 391, 'Турин': 400,
-            'Генуя': 236, 'Пиза': 85, 'Верона': 237
-        },
-        'Парма': {
-            'Болонья': 100, 'Флоренция': 187, 'Милан': 127, 'Бергамо': 166, 'Рим': 459,
-            'Венеция': 246, 'Портофино': 192, 'озеро Комо': 211, 'Турин': 245,
-            'Генуя': 211, 'Пиза': 183, 'Верона': 146
-        },
-        'Бергамо': {
-            'Болонья': 254, 'Флоренция': 342, 'Парма': 164, 'Милан': 60, 'Рим': 615,
-            'Венеция': 226, 'Портофино': 231, 'озеро Комо': 61, 'Турин': 184,
-            'Генуя': 203, 'Пиза': 319, 'Верона': 116
-        },
-    };
-
-    const pricePerKm = 1.9;
-
-    const fromSelect = document.getElementById('from');
-    const toSelect = document.getElementById('to');
-    const priceDisplay = document.getElementById('price-display');
-    const priceText = document.getElementById('price');
-    const calculateButton = document.getElementById('calculate');
-
-    function calculatePrice() {
-        const from = fromSelect.value;
-        const to = toSelect.value;
-
-        if (from && to && from !== to) {
-            const distance = prices[from][to] || prices[to][from];
-            const price = Math.round(distance * pricePerKm);
-            priceText.textContent = `Цена: ${price} €`;
-            priceDisplay.style.display = 'block';
-        } else {
-            priceText.textContent = 'Цена: -- €';
-            priceDisplay.style.display = 'none';
-        }
-    }
-
-    calculateButton.addEventListener('click', calculatePrice);
-});
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('.link-transfer');
 

@@ -2,6 +2,7 @@ body{
     margin: 0;
     overflow-x: hidden;
     background: white;
+    font-family: Arial, sans-serif;
 }
 
 .header{
@@ -18,19 +19,6 @@ body{
     z-index: 1000;
     transition: background 0.3s ease;
 }
-
-@media (max-width: 800px){
-    .header{
-        background: black;
-    }
-
-
-}
-
-
-/*.header.scrolled {*/
-/*    background: #000;*/
-/*}*/
 
 .logo1{
     padding-left: 10px;
@@ -62,9 +50,6 @@ body{
 
 #nav-icon3 {
     position: relative;
-    /*-webkit-transform: rotate(0deg);*/
-    /*-moz-transform: rotate(0deg);*/
-    /*-o-transform: rotate(0deg);*/
     transform: rotate(0deg);
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -256,15 +241,19 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .venice{
-    background: url('images/it-country.jpg') center;
+    background: url('images/flag-italy.jpg') center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2200px;
     overflow: hidden;
     gap: 3rem;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+
 }
 
 .kind-of-transfers{
@@ -277,14 +266,6 @@ body.sidebar-opened {overflow:hidden;}
     margin: 60px auto;
 }
 
-.kind-of-transfers1 {
-    position: relative;
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease-in-out;
-    padding: 6px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
 
 .photo-transfer {
     max-width: 380px;
@@ -295,7 +276,6 @@ body.sidebar-opened {overflow:hidden;}
 .text-about-transfers {
     font-size: 25px;
     font-weight: 500;
-    font-family: EuclidFlexReg, sans-serif;
     color: black;
 }
 
@@ -311,8 +291,6 @@ body.sidebar-opened {overflow:hidden;}
     border-left-color: black;
     border-right-color: black;
 }
-
-
 
 .anketa{
     max-width: 400px;
@@ -372,14 +350,12 @@ body.sidebar-opened {overflow:hidden;}
 .name{
     font-size: 25px;
     font-weight: 500;
-    font-family: EuclidFlexReg, sans-serif;
     color: black;
 }
 
 .name-of-text{
     font-size: 18px;
     font-weight: 500;
-    font-family: EuclidFlexReg, sans-serif;
     color: black;
 }
 
@@ -422,7 +398,6 @@ body.sidebar-opened {overflow:hidden;}
     color: black;
     font-size: 2rem;
     font-weight: 500;
-    font-family: EuclidFlexReg, sans-serif;
     cursor: pointer;
     text-decoration: none;
 }
@@ -431,7 +406,6 @@ body.sidebar-opened {overflow:hidden;}
     color: black;
     font-size: 2rem;
     font-weight: 800;
-    font-family: EuclidFlexReg, sans-serif;
 }
 
 .contacts{
@@ -473,7 +447,6 @@ body.sidebar-opened {overflow:hidden;}
 
 .text-anketa{
     font-size: 1rem;
-    font-family: EuclidFlexReg, sans-serif;
     font-weight: 600;
 }
 
@@ -511,7 +484,6 @@ body.sidebar-opened {overflow:hidden;}
     border: 0;
     background: white;
     font-size: 1.4rem;
-    font-family: EuclidFlexReg, sans-serif;
     cursor: pointer;
     color: black;
 }
@@ -539,7 +511,6 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .name-driver{
-    font-family: EuclidFlexReg, sans-serif;
     font-size: 38px;
     color: black;
     font-weight: 900;
@@ -554,7 +525,6 @@ th, td {
     border: 3px solid black;
     padding: 8px;
     text-align: center;
-    font-family: EuclidFlexReg, sans-serif;
     font-size: 16px;
     font-weight: 700;
 }
@@ -582,7 +552,6 @@ th {
 .text-about-service-driver1{
     font-size: 22px;
     font-weight: 500;
-    font-family: EuclidFlexReg, sans-serif;
     text-align: center;
     padding: 0 10px;
     width: 80%;
@@ -610,7 +579,6 @@ th {
 .text-about-service-driver2{
     font-size: 18px;
     font-weight: 500;
-    font-family: EuclidFlexReg, sans-serif;
     height: 70px;
 }
 
@@ -635,7 +603,6 @@ th {
 .rent-car1{
     font-size: 22px;
     font-weight: 500;
-    font-family: EuclidFlexReg, sans-serif;
     text-align: center;
     padding: 0 10px;
     width: 80%;
@@ -697,7 +664,7 @@ select {
 }
 
 .box-of-reviews {
-
+    padding: 0 10px;
 }
 
 .container-of-reviews {
@@ -714,7 +681,7 @@ select {
 
 .container-of-reviews50 {
     max-width: 400px;
-    height: 150px;
+    height: 160px;
     background: white;
     color: black;
     padding: 10px;
@@ -725,7 +692,7 @@ select {
 .container-of-reviews12{
     max-width: 400px;
     color: black;
-    padding: 10px;
+    padding: 16px;
     border-radius: 10px;
     border: 3px solid black;
 }
@@ -813,7 +780,6 @@ select {
 
 .from-to{
     display: flex;
-    /*background: #000000d1;*/
     padding: 30px;
     gap: 1rem;
     flex-wrap: wrap;
@@ -901,4 +867,39 @@ option{
 
 .link-to-contact2{
     background: white;
+}
+
+@media (max-width: 430px) {
+    .img-outlet-media-version{
+        max-width: 320px;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.box-city{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.city{
+
+}
+
+.img-city{
+    width: 200px;
+    height: 100px;
+}
+
+.logo5{
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+.container-city{
+    border-bottom: 3px solid black;
 }
