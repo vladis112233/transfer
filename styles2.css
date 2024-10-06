@@ -1,0 +1,160 @@
+.carousel-container {
+    max-width: 1600px; /* Показываем одно изображение за раз */
+    overflow: hidden; /* Скрываем все за пределами контейнера */
+    position: relative;
+    margin: 0 auto;
+}
+
+.box-city {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 2rem;
+}
+
+.city {
+    min-width: 200px; /* Ширина каждого элемента карусели */
+    text-align: center;
+}
+
+.img-city {
+    width: 200px; /* Ширина изображения */
+    height: 100px;
+}
+
+
+
+
+/*.reviews {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    margin-bottom: 50px;*/
+/*    border-top: 3px solid black;*/
+/*}*/
+
+/*.name-driver{*/
+/*    font-size: 38px;*/
+/*    color: black;*/
+/*    font-weight: 900;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.text-about-service-driver1{*/
+/*    font-size: 22px;*/
+/*    font-weight: 500;*/
+/*    text-align: center;*/
+/*    padding: 0 10px;*/
+/*    width: 80%;*/
+/*    color: black;*/
+/*}*/
+
+/*.container-of-reviews01{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    gap: 1rem;*/
+/*}*/
+
+/*.box-of-reviews {*/
+/*    padding: 0 10px;*/
+/*}*/
+
+/*.container-of-reviews12{*/
+/*    max-width: 400px;*/
+/*    color: black;*/
+/*    padding: 16px;*/
+/*    border-radius: 10px;*/
+/*    border: 3px solid black;*/
+/*}*/
+
+/*.img-outlet{*/
+/*    max-width: 400px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.text-about-service-driver2{*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*    height: 70px;*/
+/*}*/
+
+/* Вторая карусель - изменены классы */
+.carousel-custom2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-track2 {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-items2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box-of-reviews {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-control-prev2, .carousel-control-next2 {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 24px;
+}
+
+.carousel-control-prev2 {
+    left: 0;
+}
+
+.carousel-control-next2 {
+    right: 0;
+}
+
+.img-outlet {
+    max-width: 100%;
+    width: 100%;
+}
+
+.name-driver {
+    font-size: 38px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+.text-about-service-driver1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 10px;
+    width: 80%;
+    color: black;
+}
+
+.container-of-reviews12 {
+    max-width: 400px;
+    color: black;
+    padding: 16px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.text-about-service-driver2 {
+    font-size: 18px;
+    font-weight: 500;
+    height: 70px;
+}

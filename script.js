@@ -91,3 +91,97 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+// const boxCity = document.querySelector('.box-city');
+// const cityWidth = document.querySelector('.city').offsetWidth + 16; // ширина одного слайда + gap
+// let scrollAmount = 0;
+//
+// function slideRight() {
+//     scrollAmount += cityWidth; // прибавляем ширину одного слайда
+//
+//     // Если дошли до конца, сбрасываем слайды на начало
+//     if (scrollAmount >= boxCity.scrollWidth - boxCity.clientWidth) {
+//         scrollAmount = 0;
+//     }
+//
+//     boxCity.style.transform = `translateX(-${scrollAmount}px)`; // сдвиг на определенное расстояние
+// }
+//
+// setInterval(slideRight, 2000); // запуск каждые 2 секунды
+//
+
+// const boxCity = document.querySelector('.box-city');
+// let currentIndex = 0;
+//
+// function slide() {
+//     currentIndex = (currentIndex + 1) % boxCity.children.length; // Увеличиваем индекс
+//     const offset = currentIndex * -200; // Смещение в зависимости от ширины слайда
+//     boxCity.style.transform = `translateX(${offset}px)`; // Применяем смещение
+// }
+//
+// // Переключаем слайды каждые 2 секунды
+// setInterval(slide, 2000);
+
+
+// const boxCity = document.querySelector('.box-city');
+// const cities = boxCity.children;
+// const totalCities = cities.length;
+// let currentIndex = 0;
+//
+// function slide() {
+//     currentIndex = (currentIndex + 1) % totalCities; // Увеличиваем индекс
+//     const offset = currentIndex * -200; // Смещение в зависимости от ширины слайда
+//
+//     // Проверяем, если это последний слайд, чтобы добавить первый слайд в конец
+//     if (currentIndex === 0) {
+//         boxCity.style.transition = 'none'; // Отключаем анимацию при сбросе
+//         boxCity.style.transform = `translateX(0)`; // Возвращаем на первый слайд
+//         setTimeout(() => {
+//             boxCity.style.transition = 'transform 0.5s ease-in-out'; // Включаем анимацию снова
+//             boxCity.style.transform = `translateX(-200px)`; // Переключаем на второй слайд
+//         }, 50); // Небольшая задержка для того, чтобы браузер успел применить изменения
+//     } else {
+//         boxCity.style.transform = `translateX(${offset}px)`; // Применяем смещение
+//     }
+// }
+//
+// // Переключаем слайды каждые 2 секунды
+// setInterval(slide, 2000);
+
+
+// const boxCity = document.querySelector('.box-city');
+// let currentIndex = 0;
+//
+// function slide() {
+//     currentIndex = (currentIndex + 1) % boxCity.children.length; // Увеличиваем индекс
+//     const offset = currentIndex * -200; // Смещение в зависимости от ширины слайда
+//     boxCity.style.transform = `translateX(${offset}px)`; // Применяем смещение
+// }
+//
+// // Переключаем слайды каждые 2 секунды
+// setInterval(slide, 2000);
+
+
+
+// const boxCity = document.querySelector('.box-city');
+// const cities = document.querySelectorAll('.city');
+// let currentIndex = 0;
+//
+// // Function to slide the cities
+// function slideCities() {
+//     currentIndex++;
+//
+//     // Reset to the first city if at the end
+//     if (currentIndex >= cities.length) {
+//         currentIndex = 0;
+//     }
+//
+//     // Calculate the offset for the slide
+//     const offset = -currentIndex * (200 + 16); // 200 is the width, 16 is the margin-right
+//     boxCity.style.transform = `translateX(${offset}px)`;
+// }
+//
+// // Change slide every 2 seconds
+// setInterval(slideCities, 2000);
+
+

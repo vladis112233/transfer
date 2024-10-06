@@ -877,22 +877,304 @@ option{
     }
 }
 
-.box-city{
+/*.box-city{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    padding: 10px;*/
+/*    gap: 1rem;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.city{*/
+
+/*}*/
+
+/*.img-city{*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*}*/
+/*.carousel-container {*/
+/*    width: 100%; !* можно задать фиксированную ширину *!*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*}*/
+
+/*.box-city {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap;*/
+/*    gap: 1rem;*/
+/*    justify-content: flex-start;*/
+/*    animation: slide 20s linear infinite; !* Добавляем анимацию *!*/
+/*}*/
+
+/*.city {*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*.img-city {*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*}*/
+
+/*@keyframes slide {*/
+/*    0% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(-100%);*/
+/*    }*/
+/*}*/
+
+
+/*.carousel-container {*/
+/*    width: 100%; !* или установите фиксированную ширину, если необходимо *!*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*}*/
+
+/*.box-city {*/
+/*    display: flex;*/
+/*    transition: transform 0.5s ease-in-out; !* плавное смещение слайдов *!*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*.city {*/
+/*    flex-shrink: 0; !* слайды фиксированной ширины *!*/
+/*}*/
+
+/*.img-city {*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*}*/
+
+
+/*.carousel-container {*/
+/*    width: 100%; !* можно задать фиксированную ширину *!*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*}*/
+
+/*.box-city {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap;*/
+/*    gap: 1rem;*/
+/*    justify-content: flex-start;*/
+/*    animation: slide 20s linear infinite; !* Добавляем анимацию *!*/
+/*}*/
+
+/*.city {*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*.img-city {*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*}*/
+
+/*@keyframes slide {*/
+/*    0% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(-100%);*/
+/*    }*/
+/*}*/
+
+
+/*.carousel {*/
+/*    overflow: hidden; !* Скрываем переполнение *!*/
+/*    width: 100%; !* Устанавливаем ширину карусели *!*/
+/*    position: relative;*/
+/*}*/
+
+/*.box-city {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap; !* Убираем перенос строк *!*/
+/*    animation: slide 30s infinite; !* Запускаем анимацию *!*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*.city {*/
+/*    flex: 0 0 200px; !* Ширина каждого слайда *!*/
+/*    text-align: center; !* Центрируем текст *!*/
+/*}*/
+
+/*.img-city {*/
+/*    width: 200px; !* Ширина изображения будет адаптироваться *!*/
+/*    height: 100px; !* Высота автоматически подстраивается *!*/
+/*}*/
+
+/*@keyframes slide {*/
+/*    0% { transform: translateX(0); }*/
+/*    10% { transform: translateX(-200px); }*/
+/*    20% { transform: translateX(-400px); }*/
+/*    30% { transform: translateX(-600px); }*/
+/*    40% { transform: translateX(-800px); }*/
+/*    50% { transform: translateX(-1000px); }*/
+/*    60% { transform: translateX(-1200px); }*/
+/*    70% { transform: translateX(-1400px); }*/
+/*    80% { transform: translateX(-1600px); }*/
+/*    90% { transform: translateX(-1800px); }*/
+/*    100% { transform: translateX(0); }*/
+/*}*/
+
+/*.carousel {*/
+/*    overflow: hidden; !* Скрываем переполнение *!*/
+/*    width: 100%; !* Устанавливаем ширину карусели *!*/
+/*    position: relative;*/
+/*}*/
+
+/*.box-city {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap; !* Убираем перенос строк *!*/
+/*    animation: slide 30s infinite; !* Запускаем анимацию *!*/
+/*}*/
+
+/*.city {*/
+/*    flex: 0 0 200px; !* Ширина каждого слайда *!*/
+/*    text-align: center; !* Центрируем текст *!*/
+/*}*/
+
+/*.img-city {*/
+/*    width: 100%; !* Ширина изображения будет адаптироваться *!*/
+/*    height: auto; !* Высота автоматически подстраивается *!*/
+/*}*/
+
+/*@keyframes slide {*/
+/*    0% { transform: translateX(0); }*/
+/*    10% { transform: translateX(-200px); }*/
+/*    20% { transform: translateX(-400px); }*/
+/*    30% { transform: translateX(-600px); }*/
+/*    40% { transform: translateX(-800px); }*/
+/*    50% { transform: translateX(-1000px); }*/
+/*    60% { transform: translateX(-1200px); }*/
+/*    70% { transform: translateX(-1400px); }*/
+/*    80% { transform: translateX(-1600px); }*/
+/*    90% { transform: translateX(-1800px); }*/
+/*    100% { transform: translateX(0); }*/
+/*}*/
+
+/*.carousel {*/
+/*    overflow: hidden; !* Скрываем переполнение *!*/
+/*    width: 100%; !* Устанавливаем ширину карусели *!*/
+/*    position: relative;*/
+/*}*/
+
+/*.box-city {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap; !* Убираем перенос строк *!*/
+/*    animation: slide 30s infinite; !* Запускаем анимацию *!*/
+/*}*/
+
+/*.city {*/
+/*    flex: 0 0 200px; !* Ширина каждого слайда *!*/
+/*    text-align: center; !* Центрируем текст *!*/
+/*}*/
+
+/*.img-city {*/
+/*    width: 100%; !* Ширина изображения будет адаптироваться *!*/
+/*    height: auto; !* Высота автоматически подстраивается *!*/
+/*}*/
+
+/*@keyframes slide {*/
+/*    0% { transform: translateX(0); }*/
+/*    5% { transform: translateX(-200px); }*/
+/*    10% { transform: translateX(-400px); }*/
+/*    15% { transform: translateX(-600px); }*/
+/*    20% { transform: translateX(-800px); }*/
+/*    25% { transform: translateX(-1000px); }*/
+/*    30% { transform: translateX(-1200px); }*/
+/*    35% { transform: translateX(-1400px); }*/
+/*    40% { transform: translateX(-1600px); }*/
+/*    45% { transform: translateX(-1800px); }*/
+/*    50% { transform: translateX(-2000px); } !* Убедитесь, что здесь 2000px для всех слайдов *!*/
+/*    95% { transform: translateX(-2000px); }*/
+/*    100% { transform: translateX(0); }*/
+/*}*/
+
+/*.carousel {*/
+/*    overflow: hidden; !* Скрываем переполнение *!*/
+/*    width: 100%; !* Устанавливаем ширину карусели *!*/
+/*    position: relative;*/
+/*}*/
+
+/*.box-city {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap; !* Убираем перенос строк *!*/
+/*    animation: slide 10s linear infinite; !* Запускаем анимацию плавно и бесконечно *!*/
+/*    gap: 0.5rem;*/
+/*}*/
+
+/*.city {*/
+/*    flex: 0 0 200px; !* Ширина каждого слайда *!*/
+/*    text-align: center; !* Центрируем текст *!*/
+/*}*/
+
+/*.img-city {*/
+/*    width: 180px; !* Ширина изображения будет адаптироваться *!*/
+/*    height: 100px; !* Высота автоматически подстраивается *!*/
+/*}*/
+
+/*@keyframes slide {*/
+/*    0% { transform: translateX(0); }*/
+/*    10% { transform: translateX(-200px); } !* Показать первый слайд *!*/
+/*    20% { transform: translateX(-400px); } !* Показать второй слайд *!*/
+/*    30% { transform: translateX(-600px); } !* Показать третий слайд *!*/
+/*    40% { transform: translateX(-800px); } !* Показать четвертый слайд *!*/
+/*    50% { transform: translateX(-1000px); } !* Показать пятый слайд *!*/
+/*    60% { transform: translateX(-1200px); } !* Показать шестой слайд *!*/
+/*    70% { transform: translateX(-1400px); } !* Показать седьмой слайд *!*/
+/*    80% { transform: translateX(-1600px); } !* Показать восьмой слайд *!*/
+/*    90% { transform: translateX(-1800px); } !* Показать девятый слайд *!*/
+/*    100% { transform: translateX(-2000px); } !* Показать десятый слайд *!*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+/*    .city {*/
+/*        flex: 0 0 150px; !* Уменьшаем ширину слайда для мобильных *!*/
+/*        min-width: 150px; !* Минимальная ширина для слайда *!*/
+/*    }*/
+/*    @keyframes slide {*/
+/*        0% { transform: translateX(0); }*/
+/*        10% { transform: translateX(-150px); } !* Показать первый слайд *!*/
+/*        20% { transform: translateX(-300px); } !* Показать второй слайд *!*/
+/*        30% { transform: translateX(-450px); } !* Показать третий слайд *!*/
+/*        40% { transform: translateX(-600px); } !* Показать четвертый слайд *!*/
+/*        50% { transform: translateX(-750px); } !* Показать пятый слайд *!*/
+/*        60% { transform: translateX(-900px); } !* Показать шестой слайд *!*/
+/*        70% { transform: translateX(-1050px); } !* Показать седьмой слайд *!*/
+/*        80% { transform: translateX(-1200px); } !* Показать восьмой слайд *!*/
+/*        90% { transform: translateX(-1350px); } !* Показать девятый слайд *!*/
+/*        100% { transform: translateX(-1500px); } !* Показать десятый слайд *!*/
+/*    }*/
+/*}*/
+
+
+
+.carousel-container {
+    overflow: hidden; /* Hide the overflowing content */
+    /*width: 220px; !* Width of one city card + margin *!*/
+}
+
+.box-city {
     display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    gap: 1rem;
-    justify-content: center;
+    flex-wrap: nowrap; /* Keep all items in a single line */
+    transition: transform 0.5s ease; /* Smooth transition effect */
 }
 
-.city{
-
+.city {
+    min-width: 200px; /* Fixed width for each city */
+    margin-right: 1rem; /* Space between cities */
 }
 
-.img-city{
+.img-city {
     width: 200px;
     height: 100px;
 }
+
+
+
+
 
 .logo5{
     max-width: 600px;
@@ -903,3 +1185,5 @@ option{
 .container-city{
     border-bottom: 3px solid black;
 }
+
+
