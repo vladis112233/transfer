@@ -1180,3 +1180,8 @@ body.sidebar-opened {overflow:hidden;}
 .photo-advantages-icon{
     width: 60px;
 }
+
+.weight{
+    font-weight: 800;
+    color: black;
+}
