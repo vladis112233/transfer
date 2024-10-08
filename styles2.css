@@ -870,7 +870,7 @@ body.sidebar-opened {overflow:hidden;}
 }
 
 .venice{
-    background: url('images/flag-italy3456t.jpg') center;
+    background: url('images/itpl.jpg') center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 2200px;
@@ -878,7 +878,7 @@ body.sidebar-opened {overflow:hidden;}
     gap: 3rem;
     display: flex;
     align-items: flex-end;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
